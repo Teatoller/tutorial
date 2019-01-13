@@ -18,6 +18,7 @@ from django.urls import path
 from django.conf.urls import url, include
 from rest_framework import routers
 from tutorial.quickstart import views
+from rest_framework.schemas import get_schema_view
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
